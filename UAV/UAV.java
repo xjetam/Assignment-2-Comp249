@@ -1,6 +1,8 @@
 package UAV;
 
-public class UAV {
+import FlyingObjects.FlyingObjects;
+
+public class UAV extends FlyingObjects{
     
     private double weight;
     private double price;

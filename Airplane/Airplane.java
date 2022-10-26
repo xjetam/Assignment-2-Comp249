@@ -1,6 +1,8 @@
 package Airplane;
 
-public class Airplane {
+import FlyingObjects.FlyingObjects;
+
+public class Airplane extends FlyingObjects{
     
     private String brand;
     private double price;
