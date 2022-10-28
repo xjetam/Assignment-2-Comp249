@@ -37,4 +37,19 @@ public class Multirotor extends Helicopter{
         + "and has " + this.numOfRotors + " rotors.";
     }
 
+    public boolean equals(Object x){
+        if (x != null){
+            String otherClass = x.getClass().toString().substring(17);
+            if (otherClass.equals("Multirotor")){
+                Multirotor otherMultirotor = new Multirotor((Multirotor) x);
+                if (otherMultirotor.getBrand().equals(this.getBrand()) && otherMultirotor.getPrice() == this.getPrice() && otherMultirotor.getHorsepower() == this.getHorsepower()
+                && otherMultirotor.getNumOfCylinders() == this.getNumOfCylinders() && otherMultirotor.getCreationYear() == this.getCreationYear()
+                && otherMultirotor.getPassengerCapacity() == this.getPassengerCapacity() && otherMultirotor.getNumOfRotors() == this.numOfRotors){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

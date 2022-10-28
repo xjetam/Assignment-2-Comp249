@@ -64,6 +64,22 @@ public class Helicopter extends Airplane{
         return "This helicopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
         + "has " + this.numOfCylinders + " cylinders, \nwas created in " + this.creationYear + ", and has a capacity of " + this.passengerCapacity + " people.";
     }
+
+    
+    public boolean equals(Object x){
+        if (x != null){
+            String otherClass = x.getClass().toString().substring(13);
+            if (otherClass.equals("Helicopter")){
+                Helicopter otherHelicopter = new Helicopter((Helicopter) x);
+                if (otherHelicopter.getBrand().equals(this.getBrand()) && otherHelicopter.getPrice() == this.getPrice() && otherHelicopter.getHorsepower() == this.getHorsepower()
+                && otherHelicopter.getNumOfCylinders() == this.numOfCylinders && otherHelicopter.getCreationYear() == this.creationYear
+                && otherHelicopter.getPassengerCapacity() == this.passengerCapacity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     
 }
 

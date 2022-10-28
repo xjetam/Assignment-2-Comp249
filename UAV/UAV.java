@@ -45,4 +45,17 @@ public class UAV extends FlyingObjects{
         return "This UAV weighs " + this.weight + ", and costs $" + this.price + ".";
     }
 
+    public boolean equals(Object x){
+        if (x != null){
+            String otherClass = x.getClass().toString().substring(10);
+            if (otherClass.equals("UAV")){
+                UAV otherUAV = new UAV((UAV) x);
+                if (otherUAV.getWeight() == this.weight && otherUAV.getPrice() == this.price){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

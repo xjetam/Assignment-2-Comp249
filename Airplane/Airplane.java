@@ -59,5 +59,18 @@ public class Airplane extends FlyingObjects{
     public String toString(){
         return "This airplane is manufactured by " + this.brand + ", costs $" + this.price + ", and has " + this.horsepower + " horsepower.";
     }
-
+    
+    public boolean equals(Object x){
+        if (x != null){
+            String otherClass = x.getClass().toString().substring(15);
+            if (otherClass.equals("Airplane")){
+                Airplane otherAirplane = new Airplane((Airplane) x);
+                if (otherAirplane.getBrand().equals(this.brand) && otherAirplane.getPrice() == this.price && otherAirplane.getHorsepower() == this.horsepower){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
 }
