@@ -36,5 +36,20 @@ public class Quadcopter extends Helicopter{
         + "has " + this.getNumOfCylinders() + " cylinders, \nwas created in " + this.getCreationYear() + ", has a capacity of " + this.getPassengerCapacity() + " people, "
         + "and has a maximum flying speed of " + this.maxFlyingSpeed + " kilometers per hour.";
     }
+
+    public boolean equals(Object x){
+        if (x != null){
+            String otherClass = x.getClass().toString().substring(13);
+            if (otherClass.equals("Quadcopter")){
+                Quadcopter otherQuadcopter = new Quadcopter((Quadcopter) x);
+                if (otherQuadcopter.getBrand().equals(this.getBrand()) && otherQuadcopter.getPrice() == this.getPrice() && otherQuadcopter.getHorsepower() == this.getHorsepower()
+                && otherQuadcopter.getNumOfCylinders() == this.getNumOfCylinders() && otherQuadcopter.getCreationYear() == this.getCreationYear()
+                && otherQuadcopter.getPassengerCapacity() == this.getPassengerCapacity() && otherQuadcopter.getMaxFlyingSpeed() == this.maxFlyingSpeed){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     
 }

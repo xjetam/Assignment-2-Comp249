@@ -51,4 +51,18 @@ public class AgriculturalDrone extends UAV{
         ", is made by " + this.brand + ", and can carry up to" + this.carryCapacity + " kilograms";
     }
 
+    public boolean equals(Object x){
+        if (x != null){
+            String otherClass = x.getClass().toString().substring(15);
+            if (otherClass.equals("AgriculturalDrone")){
+                AgriculturalDrone otherAgriculturalDrone = new AgriculturalDrone((AgriculturalDrone) x);
+                if (otherAgriculturalDrone.getWeight() == this.getWeight() && otherAgriculturalDrone.getPrice() == this.getPrice() && otherAgriculturalDrone.getBrand().equals(this.brand)
+                && otherAgriculturalDrone.getCarryCapacity() == this.carryCapacity){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

@@ -1,4 +1,5 @@
 
+import Airplane.Airplane;
 import Copter.*;
 import Multiroter.Multirotor;
 import DroneMAV.*;
@@ -7,6 +8,7 @@ import UAV.*;
 public class Driver {
     
     public static void main(String[] args){
+        /*
         Quadcopter mycopter = new Quadcopter("Suzuki", 1712, 234, 12, 2021, 40, 400);
 
         Quadcopter mycopter2 = new Quadcopter(mycopter);
@@ -32,6 +34,18 @@ public class Driver {
 
         System.out.println(agDrone);
         System.out.println(agDrone2);
+
+        System.out.println();
+        */
+
+        AgriculturalDrone mycopter = new AgriculturalDrone(12, 31, "Yeet", 45);
+        AgriculturalDrone mycopter2 = new AgriculturalDrone(mycopter);
+        mycopter2.setBrand("Huh");
+        System.out.println(mycopter.getClass().toString());
+    
+        System.out.println(mycopter.equals(mycopter));
+        System.out.println(mycopter.equals(mycopter2));
+
 
     }
 
