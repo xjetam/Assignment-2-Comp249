@@ -2,6 +2,7 @@
 import Copter.*;
 import Multiroter.Multirotor;
 import DroneMAV.*;
+import UAV.*;
 
 public class Driver {
     
@@ -11,8 +12,8 @@ public class Driver {
         Quadcopter mycopter2 = new Quadcopter(mycopter);
         mycopter2.setBrand("Ford");
 
-        System.out.println(mycopter.getBrand());
-        System.out.println(mycopter2.getBrand());
+        System.out.println(mycopter);
+        System.out.println(mycopter2);
 
         System.out.println();
 
@@ -20,8 +21,8 @@ public class Driver {
         Multirotor myMulti2 = new Multirotor(myMulti);
         myMulti2.setBrand("Ferrari");
 
-        System.out.println(myMulti.getBrand());
-        System.out.println(myMulti2.getBrand());
+        System.out.println(myMulti);
+        System.out.println(myMulti2);
 
         System.out.println();
 
@@ -29,8 +30,8 @@ public class Driver {
         AgriculturalDrone agDrone2 = new AgriculturalDrone(agDrone);
         agDrone2.setWeight(1500);
 
-        System.out.println(agDrone.getWeight());
-        System.out.println(agDrone2.getWeight());
+        System.out.println(agDrone);
+        System.out.println(agDrone2);
 
     }
 

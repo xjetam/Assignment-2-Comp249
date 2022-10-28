@@ -42,4 +42,10 @@ public class MAV extends UAV{
     public void setModel(double size){
         this.size = size;
     }
+
+    public String toString(){
+        return "This MAV weighs " + this.getWeight() + ", costs $" + this.getPrice() + ", is the " + this.model +
+        " model, and is " + this.size + " meters across.";
+    }
+
 }

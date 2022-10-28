@@ -56,4 +56,8 @@ public class Airplane extends FlyingObjects{
         this.horsepower = horsepower;
     }
 
+    public String toString(){
+        return "This airplane is manufactured by " + this.brand + ", costs $" + this.price + ", and has " + this.horsepower + " horsepower.";
+    }
+
 }

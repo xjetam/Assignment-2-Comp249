@@ -41,4 +41,8 @@ public class UAV extends FlyingObjects{
         this.price = price;
     }
 
+    public String toString(){
+        return "This UAV weighs " + this.weight + ", and costs $" + this.price + ".";
+    }
+
 }

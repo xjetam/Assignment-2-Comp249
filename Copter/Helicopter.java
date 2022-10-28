@@ -59,6 +59,11 @@ public class Helicopter extends Airplane{
     public void setPassengerCapacity(int passengerCapacity){
         this.passengerCapacity = passengerCapacity;
     }
+
+    public String toString(){
+        return "This helicopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
+        + "has " + this.numOfCylinders + " cylinders, \nwas created in " + this.creationYear + ", and has a capacity of " + this.passengerCapacity + " people.";
+    }
     
 }
 

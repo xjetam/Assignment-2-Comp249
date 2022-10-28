@@ -45,4 +45,10 @@ public class AgriculturalDrone extends UAV{
     public void setCarryCapacity(int carryCapacity){
         this.carryCapacity = carryCapacity;
     }
+
+    public String toString(){
+        return "This agricultural drone weighs " + this.getWeight() + " kilograms, costs $" + this.getPrice() + 
+        ", is made by " + this.brand + ", and can carry up to" + this.carryCapacity + " kilograms";
+    }
+
 }
