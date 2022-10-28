@@ -23,20 +23,37 @@ public class Quadcopter extends Helicopter{
     }
 
 
+    
+    /** 
+     * @return int
+     */
     public int getMaxFlyingSpeed(){
         return this.maxFlyingSpeed;
     }
 
+    
+    /** 
+     * @param maxFlyingSpeed
+     */
     public void setMaxFlyingSpeed(int maxFlyingSpeed){
         this.maxFlyingSpeed = maxFlyingSpeed;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
         + "has " + this.getNumOfCylinders() + " cylinders, \nwas created in " + this.getCreationYear() + ", has a capacity of " + this.getPassengerCapacity() + " people, "
         + "and has a maximum flying speed of " + this.maxFlyingSpeed + " kilometers per hour.";
     }
 
+    
+    /** 
+     * @param x
+     * @return boolean
+     */
     public boolean equals(Object x){
         if (x != null){
             String otherClass = x.getClass().toString().substring(13);

@@ -29,28 +29,53 @@ public class AgriculturalDrone extends UAV{
         System.out.println("Copy constructor AgriculturalDrone");
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getBrand(){
         return this.brand;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getCarryCapacity(){
         return this.carryCapacity;
     }
 
 
+    
+    /** 
+     * @param brand
+     */
     public void setBrand(String brand){
         this.brand = brand;
     }
 
+    
+    /** 
+     * @param carryCapacity
+     */
     public void setCarryCapacity(int carryCapacity){
         this.carryCapacity = carryCapacity;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return "This agricultural drone weighs " + this.getWeight() + " kilograms, costs $" + this.getPrice() + 
         ", is made by " + this.brand + ", and can carry up to" + this.carryCapacity + " kilograms";
     }
 
+    
+    /** 
+     * @param x
+     * @return boolean
+     */
     public boolean equals(Object x){
         if (x != null){
             String otherClass = x.getClass().toString().substring(15);

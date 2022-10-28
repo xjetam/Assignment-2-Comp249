@@ -29,28 +29,53 @@ public class MAV extends UAV{
         System.out.println("Copy constructor MAV");
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getModel(){
         return this.model;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getSize(){
         return this.size;
     }
 
 
+    
+    /** 
+     * @param model
+     */
     public void setModel(String model){
         this.model = model;
     }
 
+    
+    /** 
+     * @param size
+     */
     public void setModel(double size){
         this.size = size;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return "This MAV weighs " + this.getWeight() + ", costs $" + this.getPrice() + ", is the " + this.model +
         " model, and is " + this.size + " meters across.";
     }
 
+    
+    /** 
+     * @param x
+     * @return boolean
+     */
     public boolean equals(Object x){
         if (x != null){
             String otherClass = x.getClass().toString().substring(15);

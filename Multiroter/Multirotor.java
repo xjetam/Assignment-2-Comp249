@@ -23,20 +23,37 @@ public class Multirotor extends Helicopter{
         System.out.println("Copy constructor Multirotor");
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getNumOfRotors(){
         return this.numOfRotors;
     }
 
+    
+    /** 
+     * @param numOfRotors
+     */
     public void setNumOfRotors(int numOfRotors){
         this.numOfRotors = numOfRotors;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
         + "has " + this.getNumOfCylinders() + " cylinders, \nwas created in " + this.getCreationYear() + ", has a capacity of " + this.getPassengerCapacity() + " people, "
         + "and has " + this.numOfRotors + " rotors.";
     }
 
+    
+    /** 
+     * @param x
+     * @return boolean
+     */
     public boolean equals(Object x){
         if (x != null){
             String otherClass = x.getClass().toString().substring(17);

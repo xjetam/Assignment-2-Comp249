@@ -31,35 +31,68 @@ public class Airplane extends FlyingObjects{
     }
 
 
+    
+    /** 
+     * @return String
+     */
     public String getBrand(){
         return this.brand;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getPrice(){
         return this.price;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getHorsepower(){
         return this.horsepower;
     }
 
 
+    
+    /** 
+     * @param brand
+     */
     public void setBrand(String brand){
         this.brand = brand;
     }
 
+    
+    /** 
+     * @param price
+     */
     public void setPrice(double price){
         this.price = price;
     }
 
+    
+    /** 
+     * @param horsepower
+     */
     public void setHorsepower(int horsepower){
         this.horsepower = horsepower;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return "This airplane is manufactured by " + this.brand + ", costs $" + this.price + ", and has " + this.horsepower + " horsepower.";
     }
     
+    
+    /** 
+     * @param x
+     * @return boolean
+     */
     public boolean equals(Object x){
         if (x != null){
             String otherClass = x.getClass().toString().substring(15);

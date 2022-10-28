@@ -25,26 +25,51 @@ public class UAV extends FlyingObjects{
         System.out.println("Copy constructor UAV");
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getWeight(){
         return this.weight;
     }
 
+    
+    /** 
+     * @return double
+     */
     public double getPrice(){
         return this.price;
     }
 
+    
+    /** 
+     * @param weight
+     */
     public void setWeight(int weight){
         this.weight = weight;
     }
 
+    
+    /** 
+     * @param price
+     */
     public void setPrice(int price){
         this.price = price;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return "This UAV weighs " + this.weight + ", and costs $" + this.price + ".";
     }
 
+    
+    /** 
+     * @param x
+     * @return boolean
+     */
     public boolean equals(Object x){
         if (x != null){
             String otherClass = x.getClass().toString().substring(10);

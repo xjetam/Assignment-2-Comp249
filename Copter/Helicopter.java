@@ -35,37 +35,70 @@ public class Helicopter extends Airplane{
     }
 
 
+    
+    /** 
+     * @return int
+     */
     public int getNumOfCylinders(){
         return this.numOfCylinders;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getCreationYear(){
         return this.creationYear;
     }
 
+    
+    /** 
+     * @return int
+     */
     public int getPassengerCapacity(){
         return this.passengerCapacity;
     }
 
 
+    
+    /** 
+     * @param numOfCylinders
+     */
     public void setNumOfCylinders(int numOfCylinders){
         this.numOfCylinders = numOfCylinders;
     }
 
+    
+    /** 
+     * @param creationYear
+     */
     public void setCreationYear(int creationYear){
         this.creationYear = creationYear;
     }
 
+    
+    /** 
+     * @param passengerCapacity
+     */
     public void setPassengerCapacity(int passengerCapacity){
         this.passengerCapacity = passengerCapacity;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         return "This helicopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
         + "has " + this.numOfCylinders + " cylinders, \nwas created in " + this.creationYear + ", and has a capacity of " + this.passengerCapacity + " people.";
     }
 
     
+    
+    /** 
+     * @param x
+     * @return boolean
+     */
     public boolean equals(Object x){
         if (x != null){
             String otherClass = x.getClass().toString().substring(13);
