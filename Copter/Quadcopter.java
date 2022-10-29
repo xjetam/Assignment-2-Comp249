@@ -4,18 +4,34 @@ public class Quadcopter extends Helicopter{
 
     private int maxFlyingSpeed;
 
-
+    /**
+     * Default constructor.
+     */
     public Quadcopter(){
         this.maxFlyingSpeed = 0;
         //System.out.println("Default constructor Quadcopter");
     }
-
+    /**
+     * Constructor that takes parameters.
+     * 
+     * @param brand 
+     * @param price
+     * @param horsepower
+     * @param numOfCylinders
+     * @param creationYear
+     * @param passengerCapacity
+     * @param maxFlyingSpeed
+     */
     public Quadcopter(String brand, double price, int horsepower, int numOfCylinders, int creationYear, int passengerCapacity, int maxFlyingSpeed){
         super(brand, price, horsepower, numOfCylinders, creationYear, passengerCapacity);
         this.maxFlyingSpeed = maxFlyingSpeed;
         //System.out.println("Paramatized constructor Quadcopter");
     }
-
+    /**
+     * Copy constructor.
+     * 
+     * @param quadcopter object that is the copy
+     */
     public Quadcopter(Quadcopter quadcopter){
         super(quadcopter);
         this.maxFlyingSpeed = quadcopter.getMaxFlyingSpeed();
@@ -25,7 +41,7 @@ public class Quadcopter extends Helicopter{
 
     
     /** 
-     * @return int
+     * @return int max flying speed of object
      */
     public int getMaxFlyingSpeed(){
         return this.maxFlyingSpeed;
@@ -33,6 +49,7 @@ public class Quadcopter extends Helicopter{
 
     
     /** 
+     * sets max flying speed
      * @param maxFlyingSpeed
      */
     public void setMaxFlyingSpeed(int maxFlyingSpeed){
@@ -41,6 +58,7 @@ public class Quadcopter extends Helicopter{
 
     
     /** 
+     * Prints out all the info of the object
      * @return String
      */
     public String toString(){
@@ -51,8 +69,9 @@ public class Quadcopter extends Helicopter{
 
     
     /** 
-     * @param x
-     * @return boolean
+     * Checks if two objects are equal
+     * @param x object to compare
+     * @return boolean true if equal false if not
      */
     public boolean equals(Object x){
         if (x != null){

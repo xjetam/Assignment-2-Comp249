@@ -2,27 +2,45 @@ package Airplane;
 
 import FlyingObjects.FlyingObjects;
 
+/**
+ * Assignment 2
+ * For COMP  249 Section D - Fall 2022
+ * @author Linden Wheeler 40195748 and Matej Pederson 40209550
+ * @version
+ */
 public class Airplane extends FlyingObjects{
     
     private String brand;
     private double price;
     private int horsepower;
 
-
+    /**
+     * Default constructor.
+     */
     public Airplane(){
         this.brand = "No brand";
         this.price = 0;
         this.horsepower = 0;
         //System.out.println("Default constructor Airplane");
     }
-
+    /**
+     * Constructor that takes parameters.
+     * 
+     * @param brand 
+     * @param price
+     * @param horsepower
+     */
     public Airplane(String brand, double price, int horsepower){
         this.brand = brand;
         this.price = price;
         this.horsepower = horsepower;
         //System.out.println("Paramatized constructor Airplane");
     }
-
+    /**
+     * Copy constructor.
+     * 
+     * @param airplane object that is the copy
+     */
     public Airplane(Airplane airplane){
         this.brand = airplane.getBrand();
         this.price = airplane.getPrice();
@@ -33,7 +51,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * @return String
+     * @return String brand of object
      */
     public String getBrand(){
         return this.brand;
@@ -41,7 +59,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * @return double
+     * @return double price of object
      */
     public double getPrice(){
         return this.price;
@@ -49,7 +67,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * @return int
+     * @return int horsepower of object
      */
     public int getHorsepower(){
         return this.horsepower;
@@ -58,6 +76,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
+     * sets brand of object
      * @param brand
      */
     public void setBrand(String brand){
@@ -66,6 +85,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
+     * sets price of object
      * @param price
      */
     public void setPrice(double price){
@@ -74,6 +94,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
+     * sets horsepower of object
      * @param horsepower
      */
     public void setHorsepower(int horsepower){
@@ -82,6 +103,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
+     * Prints out all the info of the plane
      * @return String
      */
     public String toString(){
@@ -90,8 +112,9 @@ public class Airplane extends FlyingObjects{
     
     
     /** 
-     * @param x
-     * @return boolean
+     * Checks if two objects are equal
+     * @param x plane to compare
+     * @return boolean true if equal false if not
      */
     public boolean equals(Object x){
         if (x != null){
@@ -107,3 +130,4 @@ public class Airplane extends FlyingObjects{
     }
     
 }
+

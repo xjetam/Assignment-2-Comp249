@@ -8,14 +8,25 @@ public class Helicopter extends Airplane{
     private int creationYear;
     private int passengerCapacity;
 
-
+    /**
+     * Default constructor.
+     */
     public Helicopter(){
         this.numOfCylinders = 0;
         this.creationYear = 0;
         this.passengerCapacity = 0;
         //System.out.println("Default constructor Helicopter");
     }
-
+    /**
+     * Constructor that takes parameters.
+     * 
+     * @param brand 
+     * @param price
+     * @param horsepower
+     * @param numOfCylinders
+     * @param creationYear
+     * @param passengerCapacity
+     */
     public Helicopter(String brand, double price, int horsepower, int numOfCylinders, int creationYear, int passengerCapacity){
         super(brand, price, horsepower);
         
@@ -24,7 +35,11 @@ public class Helicopter extends Airplane{
         this.passengerCapacity = passengerCapacity;
         //System.out.println("Paramatized constructor Helicopter");
     }
-
+    /**
+     * Copy constructor.
+     * 
+     * @param helicopter object that is the copy
+     */
     public Helicopter(Helicopter helicopter){
         super(helicopter);
 
@@ -37,7 +52,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * @return int
+     * @return int num of cylinders
      */
     public int getNumOfCylinders(){
         return this.numOfCylinders;
@@ -45,7 +60,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * @return int
+     * @return int creation year
      */
     public int getCreationYear(){
         return this.creationYear;
@@ -53,7 +68,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * @return int
+     * @return int passenger capacity
      */
     public int getPassengerCapacity(){
         return this.passengerCapacity;
@@ -62,6 +77,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
+     * sets num  of cylinders
      * @param numOfCylinders
      */
     public void setNumOfCylinders(int numOfCylinders){
@@ -70,6 +86,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
+     * sets creation year
      * @param creationYear
      */
     public void setCreationYear(int creationYear){
@@ -78,6 +95,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
+     * sets passenger capacity
      * @param passengerCapacity
      */
     public void setPassengerCapacity(int passengerCapacity){
@@ -86,6 +104,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
+     * Prints out all the info of the plane
      * @return String
      */
     public String toString(){
@@ -96,8 +115,9 @@ public class Helicopter extends Airplane{
     
     
     /** 
-     * @param x
-     * @return boolean
+     * Checks if two objects are equal
+     * @param x plane to compare
+     * @return boolean true if equal false if not
      */
     public boolean equals(Object x){
         if (x != null){
