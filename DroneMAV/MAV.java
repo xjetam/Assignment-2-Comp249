@@ -10,7 +10,7 @@ public class MAV extends UAV{
     public MAV(){
         this.model = "No model";
         this.size = 0;
-        System.out.println("Default constructor MAV");
+        //System.out.println("Default constructor MAV");
     }
 
     public MAV(double weight, double price, String model, double size){
@@ -18,7 +18,7 @@ public class MAV extends UAV{
 
         this.model = model;
         this.size = size;
-        System.out.println("Paramatized constructor MAV");
+        //System.out.println("Paramatized constructor MAV");
     }
 
     public MAV(MAV mav){
@@ -26,7 +26,7 @@ public class MAV extends UAV{
         
         this.model = mav.getModel();
         this.size = mav.getSize();
-        System.out.println("Copy constructor MAV");
+        //System.out.println("Copy constructor MAV");
     }
 
     public String getModel(){

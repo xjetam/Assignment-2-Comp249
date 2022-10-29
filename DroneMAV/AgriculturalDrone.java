@@ -10,7 +10,7 @@ public class AgriculturalDrone extends UAV{
     public AgriculturalDrone(){
         this.brand = "No brand";
         this.carryCapacity = 0;
-        System.out.println("Default constructor AgriculturalDrone");
+        //System.out.println("Default constructor AgriculturalDrone");
     }
 
     public AgriculturalDrone(double weight, double price, String brand, int carryCapacity){
@@ -18,7 +18,7 @@ public class AgriculturalDrone extends UAV{
 
         this.brand = brand;
         this.carryCapacity = carryCapacity;
-        System.out.println("Paramatized constructor AgriculturalDrone");
+        //System.out.println("Paramatized constructor AgriculturalDrone");
     }
 
     public AgriculturalDrone(AgriculturalDrone agroDrone){
@@ -26,7 +26,7 @@ public class AgriculturalDrone extends UAV{
         
         this.brand = agroDrone.getBrand();
         this.carryCapacity = agroDrone.getCarryCapacity();
-        System.out.println("Copy constructor AgriculturalDrone");
+        //System.out.println("Copy constructor AgriculturalDrone");
     }
 
     public String getBrand(){
@@ -48,7 +48,7 @@ public class AgriculturalDrone extends UAV{
 
     public String toString(){
         return "This agricultural drone weighs " + this.getWeight() + " kilograms, costs $" + this.getPrice() + 
-        ", is made by " + this.brand + ", and can carry up to" + this.carryCapacity + " kilograms";
+        ", is made by " + this.brand + ", and can carry up to " + this.carryCapacity + " kilograms";
     }
 
     public boolean equals(Object x){

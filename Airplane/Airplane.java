@@ -13,21 +13,21 @@ public class Airplane extends FlyingObjects{
         this.brand = "No brand";
         this.price = 0;
         this.horsepower = 0;
-        System.out.println("Default constructor Airplane");
+        //System.out.println("Default constructor Airplane");
     }
 
     public Airplane(String brand, double price, int horsepower){
         this.brand = brand;
         this.price = price;
         this.horsepower = horsepower;
-        System.out.println("Paramatized constructor Airplane");
+        //System.out.println("Paramatized constructor Airplane");
     }
 
     public Airplane(Airplane airplane){
         this.brand = airplane.getBrand();
         this.price = airplane.getPrice();
         this.horsepower = airplane.getHorsepower();
-        System.out.println("Copy constructor Airplane");
+        //System.out.println("Copy constructor Airplane");
     }
 
 
