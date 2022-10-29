@@ -13,7 +13,7 @@ public class Helicopter extends Airplane{
         this.numOfCylinders = 0;
         this.creationYear = 0;
         this.passengerCapacity = 0;
-        System.out.println("Default constructor Helicopter");
+        //System.out.println("Default constructor Helicopter");
     }
 
     public Helicopter(String brand, double price, int horsepower, int numOfCylinders, int creationYear, int passengerCapacity){
@@ -22,7 +22,7 @@ public class Helicopter extends Airplane{
         this.numOfCylinders = numOfCylinders;
         this.creationYear = creationYear;
         this.passengerCapacity = passengerCapacity;
-        System.out.println("Paramatized constructor Helicopter");
+        //System.out.println("Paramatized constructor Helicopter");
     }
 
     public Helicopter(Helicopter helicopter){
@@ -31,7 +31,7 @@ public class Helicopter extends Airplane{
         this.numOfCylinders = helicopter.getNumOfCylinders();
         this.creationYear = helicopter.getCreationYear();
         this.passengerCapacity = helicopter.getPassengerCapacity();
-        System.out.println("Copy constructor Helicopter");
+        //System.out.println("Copy constructor Helicopter");
     }
 
 
