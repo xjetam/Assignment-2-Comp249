@@ -5,7 +5,11 @@ import Multiroter.Multirotor;
 import DroneMAV.*;
 import FlyingObjects.FlyingObjects;
 import UAV.*;
-
+/**
+ * Assignment 2
+ * For COMP  249 Section D - Fall 2022
+ * @author Linden Wheeler 40195748 and Matej Pederson 40209550
+ */
 public class Driver {
     
     public static void main(String[] args){

@@ -1,5 +1,9 @@
 package Copter;
-
+/**
+ * Assignment 2
+ * For COMP  249 Section D - Fall 2022
+ * @author Linden Wheeler 40195748 and Matej Pederson 40209550
+ */
 public class Quadcopter extends Helicopter{
 
     private int maxFlyingSpeed;
@@ -14,13 +18,13 @@ public class Quadcopter extends Helicopter{
     /**
      * Constructor that takes parameters.
      * 
-     * @param brand 
-     * @param price
-     * @param horsepower
-     * @param numOfCylinders
-     * @param creationYear
-     * @param passengerCapacity
-     * @param maxFlyingSpeed
+     * @param brand brand of quadcopter
+     * @param price price of quadcopter
+     * @param horsepower horsepower of quadcopter
+     * @param numOfCylinders numOfCylinders of quadcopter
+     * @param creationYear creationYear of quadcopter
+     * @param passengerCapacity passengerCapacity of quadcopter
+     * @param maxFlyingSpeed maxFlyingSpeed of quadcopter
      */
     public Quadcopter(String brand, double price, int horsepower, int numOfCylinders, int creationYear, int passengerCapacity, int maxFlyingSpeed){
         super(brand, price, horsepower, numOfCylinders, creationYear, passengerCapacity);
@@ -50,7 +54,7 @@ public class Quadcopter extends Helicopter{
     
     /** 
      * sets max flying speed
-     * @param maxFlyingSpeed
+     * @param maxFlyingSpeed max flying speed 
      */
     public void setMaxFlyingSpeed(int maxFlyingSpeed){
         this.maxFlyingSpeed = maxFlyingSpeed;
@@ -59,7 +63,7 @@ public class Quadcopter extends Helicopter{
     
     /** 
      * Prints out all the info of the object
-     * @return String
+     * @return String info of quadcopter
      */
     public String toString(){
         return "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "

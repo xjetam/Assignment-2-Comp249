@@ -27,5 +27,4 @@ public class FlyingObjects {
         return "Object number: " + objectNumber;
     }
     
-    
 }

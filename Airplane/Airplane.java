@@ -6,7 +6,6 @@ import FlyingObjects.FlyingObjects;
  * Assignment 2
  * For COMP  249 Section D - Fall 2022
  * @author Linden Wheeler 40195748 and Matej Pederson 40209550
- * @version
  */
 public class Airplane extends FlyingObjects{
     
@@ -26,9 +25,9 @@ public class Airplane extends FlyingObjects{
     /**
      * Constructor that takes parameters.
      * 
-     * @param brand 
-     * @param price
-     * @param horsepower
+     * @param brand brand of object
+     * @param price price of object
+     * @param horsepower horsepower of object
      */
     public Airplane(String brand, double price, int horsepower){
         this.brand = brand;
@@ -51,6 +50,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
+     * returns brand of object
      * @return String brand of object
      */
     public String getBrand(){
@@ -77,7 +77,7 @@ public class Airplane extends FlyingObjects{
     
     /** 
      * sets brand of object
-     * @param brand
+     * @param brand brand of object
      */
     public void setBrand(String brand){
         this.brand = brand;
@@ -86,7 +86,7 @@ public class Airplane extends FlyingObjects{
     
     /** 
      * sets price of object
-     * @param price
+     * @param price price of object
      */
     public void setPrice(double price){
         this.price = price;
@@ -95,7 +95,7 @@ public class Airplane extends FlyingObjects{
     
     /** 
      * sets horsepower of object
-     * @param horsepower
+     * @param horsepower horsepower of the quadcopter
      */
     public void setHorsepower(int horsepower){
         this.horsepower = horsepower;
@@ -104,7 +104,7 @@ public class Airplane extends FlyingObjects{
     
     /** 
      * Prints out all the info of the plane
-     * @return String
+     * @return String info of airplane
      */
     public String toString(){
         return "This airplane is manufactured by " + this.brand + ", costs $" + this.price + ", and has " + this.horsepower + " horsepower.";
