@@ -28,6 +28,8 @@ public class Multirotor extends Helicopter{
      * @param horsepower horsepower of MR
      * @param numOfCylinders number of cylinders of MR
      * @param creationYear creation year of MR
+     * @param passengerCapacity passenger capacity of MR
+     * @param numOfRotors num of rotors on MR
      * 
      */
     public Multirotor(String brand, double price, int horsepower, int numOfCylinders, int creationYear, int passengerCapacity, int numOfRotors){
