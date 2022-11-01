@@ -1,4 +1,4 @@
-package Multiroter;
+package Multirotor;
 
 import Copter.Helicopter;
 /**
