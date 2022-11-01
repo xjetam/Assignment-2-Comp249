@@ -97,7 +97,10 @@ public class Driver2 {
         }
 
     }
-
+    /** 
+     * Copies the given array into a new array of flying objects
+     * @param array array of objects that will be copied into a new array as flying objects
+     */
     public static FlyingObjects[] copyFlyingObjects(FlyingObjects[] array){
         FlyingObjects[] newArray = new FlyingObjects[array.length];
         for (int i = 0; i < array.length; i++){

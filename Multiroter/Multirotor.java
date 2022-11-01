@@ -23,11 +23,11 @@ public class Multirotor extends Helicopter{
     /**
      * Constructor that takes parameters.
      * 
-     * @param brand brand of object
-     * @param price price of object
-     * @param horsepower horsepower of object
-     * @param numOfCylinders number of cylinders in the object
-     * @param creationYear creation year of the object
+     * @param brand brand of MR
+     * @param price price of MR
+     * @param horsepower horsepower of MR
+     * @param numOfCylinders number of cylinders of MR
+     * @param creationYear creation year of MR
      * 
      */
     public Multirotor(String brand, double price, int horsepower, int numOfCylinders, int creationYear, int passengerCapacity, int numOfRotors){
@@ -48,8 +48,8 @@ public class Multirotor extends Helicopter{
 
     
     /** 
-     * returns numbers of rotors on the object
-     * @return int number of rotors
+     * returns numbers of rotors on MR
+     * @return int number of rotors of MR
      */
     public int getNumOfRotors(){
         return this.numOfRotors;
@@ -57,8 +57,8 @@ public class Multirotor extends Helicopter{
 
     
     /** 
-     * sets the number of rotors
-     * @param numOfRotors number of rotors on the object
+     * sets the number of rotors on MR
+     * @param numOfRotors number of rotors on MR
      */
     public void setNumOfRotors(int numOfRotors){
         this.numOfRotors = numOfRotors;
@@ -66,8 +66,8 @@ public class Multirotor extends Helicopter{
 
     
     /** 
-     * returns the information of the multirotor
-     * @return String info of Multirotor
+     * returns the information of MR
+     * @return String info of MR
      */
     public String toString(){
         return "Flying object number " + this.getObjectNumber() + ". " + "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "

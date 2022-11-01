@@ -22,10 +22,10 @@ public class AgriculturalDrone extends UAV{
     /**
      * Constructor that takes parameters.
      * 
-     * @param weight weight of object
-     * @param price price of object
-     * @param brand brand of object
-     * @param carryCapacity carry capacity of object
+     * @param weight weight of AD
+     * @param price price of AD
+     * @param brand brand of AD
+     * @param carryCapacity carry capacity of AD
      */
     public AgriculturalDrone(double weight, double price, String brand, int carryCapacity){
         super(weight, price);
@@ -49,8 +49,8 @@ public class AgriculturalDrone extends UAV{
 
     
     /** 
-     * returns brand of the object
-     * @return String brand of object
+     * returns brand of AD
+     * @return String brand of AD
      */
     public String getBrand(){
         return this.brand;
@@ -58,8 +58,8 @@ public class AgriculturalDrone extends UAV{
 
     
     /** 
-     * returns the carrying capacity of the object
-     * @return int get carry capacity
+     * returns the carrying capacity of AD
+     * @return int get carry capacity of AD
      */
     public int getCarryCapacity(){
         return this.carryCapacity;
@@ -68,8 +68,8 @@ public class AgriculturalDrone extends UAV{
 
     
     /** 
-     * sets the brand of the AD
-     * @param brand brand of the object
+     * sets the brand of AD
+     * @param brand brand of of AD
      */
     public void setBrand(String brand){
         this.brand = brand;
@@ -77,8 +77,8 @@ public class AgriculturalDrone extends UAV{
 
     
     /** 
-     * sets the carry capacity of the object
-     * @param carryCapacity carry capacity of the object
+     * sets the carry capacity of AD
+     * @param carryCapacity carry capacity of AD
      */
     public void setCarryCapacity(int carryCapacity){
         this.carryCapacity = carryCapacity;
@@ -86,8 +86,8 @@ public class AgriculturalDrone extends UAV{
 
     
     /** 
-     * returns the information of the AD
-     * @return String info of the AD
+     * returns the information of AD
+     * @return String info of AD
      */
     public String toString(){
         return "Flying object number " + this.getObjectNumber() + ". " + "This agricultural drone weighs " + this.getWeight() + " kilograms, costs $" + this.getPrice() + 

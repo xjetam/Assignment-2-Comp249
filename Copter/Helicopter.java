@@ -56,7 +56,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * @return int num of cylinders
+     * @return int num of cylinders of helicopter
      */
     public int getNumOfCylinders(){
         return this.numOfCylinders;
@@ -64,7 +64,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * @return int creation year
+     * @return int creation year of helicopter
      */
     public int getCreationYear(){
         return this.creationYear;
@@ -72,7 +72,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * @return int passenger capacity
+     * @return int passenger capacity of helicopter
      */
     public int getPassengerCapacity(){
         return this.passengerCapacity;
@@ -81,7 +81,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * sets num  of cylinders
+     * sets num  of cylinders of helicopter
      * @param numOfCylinders
      */
     public void setNumOfCylinders(int numOfCylinders){
@@ -90,7 +90,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * sets creation year
+     * sets creation year of helicopter
      * @param creationYear
      */
     public void setCreationYear(int creationYear){
@@ -99,7 +99,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * sets passenger capacity
+     * sets passenger capacity of helicopter
      * @param passengerCapacity
      */
     public void setPassengerCapacity(int passengerCapacity){
@@ -108,7 +108,7 @@ public class Helicopter extends Airplane{
 
     
     /** 
-     * Prints out all the info of the plane
+     * Prints out all the info of helicopter
      * @return String
      */
     public String toString(){

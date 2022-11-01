@@ -45,7 +45,7 @@ public class Quadcopter extends Helicopter{
 
     
     /** 
-     * @return int max flying speed of object
+     * @return int max flying speed of quadcopter
      */
     public int getMaxFlyingSpeed(){
         return this.maxFlyingSpeed;
@@ -53,8 +53,9 @@ public class Quadcopter extends Helicopter{
 
     
     /** 
-     * sets max flying speed
-     * @param maxFlyingSpeed max flying speed 
+     * sets max flying speed of quadcopter
+     *
+     * @param maxFlyingSpeed max flying speed of quadcopter
      */
     public void setMaxFlyingSpeed(int maxFlyingSpeed){
         this.maxFlyingSpeed = maxFlyingSpeed;
@@ -62,7 +63,7 @@ public class Quadcopter extends Helicopter{
 
     
     /** 
-     * Prints out all the info of the object
+     * Prints out all the info of quadcopter
      * @return String info of quadcopter
      */
     public String toString(){

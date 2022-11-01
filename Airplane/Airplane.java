@@ -25,9 +25,9 @@ public class Airplane extends FlyingObjects{
     /**
      * Constructor that takes parameters.
      * 
-     * @param brand brand of object
-     * @param price price of object
-     * @param horsepower horsepower of object
+     * @param brand brand of airplane
+     * @param price price of airplane
+     * @param horsepower horsepower of airplane
      */
     public Airplane(String brand, double price, int horsepower){
         this.brand = brand;
@@ -50,8 +50,8 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * returns brand of object
-     * @return String brand of object
+     * returns brand of airplane
+     * @return String brand of airplane
      */
     public String getBrand(){
         return this.brand;
@@ -59,7 +59,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * @return double price of object
+     * @return double price of airplane
      */
     public double getPrice(){
         return this.price;
@@ -67,7 +67,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * @return int horsepower of object
+     * @return int horsepower of airplane
      */
     public int getHorsepower(){
         return this.horsepower;
@@ -76,8 +76,8 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * sets brand of object
-     * @param brand brand of object
+     * sets brand of airplane
+     * @param brand brand of airplane
      */
     public void setBrand(String brand){
         this.brand = brand;
@@ -85,8 +85,8 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * sets price of object
-     * @param price price of object
+     * sets price of airplane
+     * @param price price of airplane
      */
     public void setPrice(double price){
         this.price = price;
@@ -94,8 +94,8 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * sets horsepower of object
-     * @param horsepower horsepower of the quadcopter
+     * sets horsepower of airplane
+     * @param horsepower horsepower of airplane
      */
     public void setHorsepower(int horsepower){
         this.horsepower = horsepower;
@@ -103,7 +103,7 @@ public class Airplane extends FlyingObjects{
 
     
     /** 
-     * Prints out all the info of the plane
+     * Prints out all the info of the airplane
      * @return String info of airplane
      */
     public String toString(){

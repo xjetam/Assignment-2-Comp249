@@ -12,6 +12,7 @@ import UAV.*;
  */
 public class Driver {
     
+    
     public static void main(String[] args){
         System.out.println();
 
@@ -95,6 +96,11 @@ public class Driver {
         findLeastAndMostExpensiveUAV(array2);
     }
 
+    
+    /** 
+     * If they exsist, finds the least and most expensive UAV and displays them.
+     * @param array array of objects that will be searched for UAVs
+     */
     public static void findLeastAndMostExpensiveUAV(FlyingObjects[] array){
         int counter = 0;
         for (FlyingObjects object : array){

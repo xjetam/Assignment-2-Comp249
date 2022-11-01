@@ -21,8 +21,8 @@ public class UAV extends FlyingObjects{
     /**
      * Constructor that takes parameters.
      * 
-     * @param weight weight of object
-     * @param price price of object
+     * @param weight weight of UAV
+     * @param price price of UAV
      */
     public UAV(double weight, double price){
         this.weight = weight;
@@ -42,8 +42,8 @@ public class UAV extends FlyingObjects{
 
     
     /** 
-     * returns the weight of object
-     * @return double weight of object
+     * returns the weight of UAV
+     * @return double weight of UAV
      */
     public double getWeight(){
         return this.weight;
@@ -51,8 +51,8 @@ public class UAV extends FlyingObjects{
 
     
     /** 
-     * returns the price of object
-     * @return double price of object
+     * returns the price of UAV
+     * @return double price of UAV
      */
     public double getPrice(){
         return this.price;
@@ -60,8 +60,8 @@ public class UAV extends FlyingObjects{
 
     
     /** 
-     * sets weight of object
-     * @param weight weight of object
+     * sets weight of UAV
+     * @param weight weight of UAV
      */
     public void setWeight(int weight){
         this.weight = weight;
@@ -69,8 +69,8 @@ public class UAV extends FlyingObjects{
 
     
     /** 
-     * sets price of object
-     * @param price price of object
+     * sets price of UAV
+     * @param price price of UAV
      */
     public void setPrice(int price){
         this.price = price;
@@ -78,8 +78,8 @@ public class UAV extends FlyingObjects{
 
     
     /** 
-     * returns all information of the UAV
-     * @return String info of the UAV
+     * returns all information of UAV
+     * @return String info of UAV
      */
     public String toString(){
         return "Flying object number " + this.getObjectNumber() + ". " + "This UAV weighs " + this.weight + ", and costs $" + this.price + ".";
