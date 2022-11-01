@@ -5,6 +5,12 @@ import DroneMAV.*;
 import FlyingObjects.FlyingObjects;
 import UAV.*;
 
+/**
+ * Assignment 2 Part 2
+ * For COMP  249 Section D - Fall 2022
+ * @author Linden Wheeler 40195748 and Matej Pederson 40209550
+ */
+
 public class Driver2 {
     public static void main(String[] args){
         System.out.println();
@@ -70,9 +76,9 @@ public class Driver2 {
 
         System.out.println();
 
-        System.out.println(helicopter.equals(agDrone));
-        System.out.println(helicopter.equals(helicopter2));
-        System.out.println(helicopter2.equals(helicopter3));
+        System.out.println("helicopter equals agDrone: " + helicopter.equals(agDrone));
+        System.out.println("helicopter equals helicopter2: " + helicopter.equals(helicopter2));
+        System.out.println("helicopter2 equals helicopter3: " + helicopter2.equals(helicopter3));
 
         System.out.println();
 

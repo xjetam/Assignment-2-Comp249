@@ -66,7 +66,7 @@ public class Quadcopter extends Helicopter{
      * @return String info of quadcopter
      */
     public String toString(){
-        return "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
+        return "Flying object number " + this.getObjectNumber() + ". " + "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
         + "has " + this.getNumOfCylinders() + " cylinders, \nwas created in " + this.getCreationYear() + ", has a capacity of " + this.getPassengerCapacity() + " people, "
         + "and has a maximum flying speed of " + this.maxFlyingSpeed + " kilometers per hour.";
     }

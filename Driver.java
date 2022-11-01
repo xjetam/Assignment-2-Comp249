@@ -6,7 +6,7 @@ import DroneMAV.*;
 import FlyingObjects.FlyingObjects;
 import UAV.*;
 /**
- * Assignment 2
+ * Assignment 2 Part 1
  * For COMP  249 Section D - Fall 2022
  * @author Linden Wheeler 40195748 and Matej Pederson 40209550
  */

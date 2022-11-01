@@ -70,7 +70,7 @@ public class Multirotor extends Helicopter{
      * @return String info of Multirotor
      */
     public String toString(){
-        return "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
+        return "Flying object number " + this.getObjectNumber() + ". " + "This quadcopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
         + "has " + this.getNumOfCylinders() + " cylinders, \nwas created in " + this.getCreationYear() + ", has a capacity of " + this.getPassengerCapacity() + " people, "
         + "and has " + this.numOfRotors + " rotors.";
     }

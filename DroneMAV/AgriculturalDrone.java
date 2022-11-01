@@ -90,7 +90,7 @@ public class AgriculturalDrone extends UAV{
      * @return String info of the AD
      */
     public String toString(){
-        return "This agricultural drone weighs " + this.getWeight() + " kilograms, costs $" + this.getPrice() + 
+        return "Flying object number " + this.getObjectNumber() + ". " + "This agricultural drone weighs " + this.getWeight() + " kilograms, costs $" + this.getPrice() + 
         ", is made by " + this.brand + ", and can carry up to " + this.carryCapacity + " kilograms";
     }
 

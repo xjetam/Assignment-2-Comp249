@@ -107,7 +107,7 @@ public class Airplane extends FlyingObjects{
      * @return String info of airplane
      */
     public String toString(){
-        return "This airplane is manufactured by " + this.brand + ", costs $" + this.price + ", and has " + this.horsepower + " horsepower.";
+        return "Flying object number " + this.getObjectNumber() + ". " + "This airplane is manufactured by " + this.brand + ", costs $" + this.price + ", and has " + this.horsepower + " horsepower.";
     }
     
     

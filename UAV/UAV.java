@@ -82,7 +82,7 @@ public class UAV extends FlyingObjects{
      * @return String info of the UAV
      */
     public String toString(){
-        return "This UAV weighs " + this.weight + ", and costs $" + this.price + ".";
+        return "Flying object number " + this.getObjectNumber() + ". " + "This UAV weighs " + this.weight + ", and costs $" + this.price + ".";
     }
 
     
