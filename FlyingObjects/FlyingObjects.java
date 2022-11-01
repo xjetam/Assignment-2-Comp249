@@ -6,7 +6,7 @@ package FlyingObjects;
  */
 public class FlyingObjects {
 
-    private static int objectCounter = 0;
+    private static int objectCounter = 1;
     private int objectNumber;
     /**
      * Default constructor.

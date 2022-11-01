@@ -76,9 +76,9 @@ public class Driver2 {
 
         System.out.println();
 
-        System.out.println("helicopter equals agDrone: " + helicopter.equals(agDrone));
-        System.out.println("helicopter equals helicopter2: " + helicopter.equals(helicopter2));
-        System.out.println("helicopter2 equals helicopter3: " + helicopter2.equals(helicopter3));
+        System.out.println("helicopter with number " + helicopter.getObjectNumber() + " equals agricultural drone with number " + agDrone.getObjectNumber() + ": " + helicopter.equals(agDrone));
+        System.out.println("helicopter with number " + helicopter.getObjectNumber() + " equals helicopter with number " + helicopter2.getObjectNumber() + ": " + helicopter.equals(helicopter2));
+        System.out.println("helicopter with number " + helicopter2.getObjectNumber() + " equals helicopter with number " + helicopter3.getObjectNumber() + ": " + helicopter2.equals(helicopter3));
 
         System.out.println();
 
