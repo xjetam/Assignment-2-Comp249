@@ -24,7 +24,7 @@ public class MAV extends UAV{
      * @param weight brand of MAV
      * @param price price of MAV
      * @param model horsepower of MAV
-     * @param size size of the MAV
+     * @param size size of MAV
      */
     public MAV(double weight, double price, String model, double size){
         super(weight, price);
@@ -36,7 +36,7 @@ public class MAV extends UAV{
     /**
      * Copy constructor.
      * 
-     * @param airplane object that is the copy
+     * @param mav object that is the copy
      */
     public MAV(MAV mav){
         super(mav);
@@ -48,8 +48,8 @@ public class MAV extends UAV{
 
     
     /** 
-     * returns the model of object
-     * @return String model
+     * returns the model of MAV
+     * @return String model of MAV
      */
     public String getModel(){
         return this.model;
@@ -57,8 +57,8 @@ public class MAV extends UAV{
 
     
     /** 
-     * returns the size of object
-     * @return double size
+     * returns the size of MAV
+     * @return double size of MAV
      */
     public double getSize(){
         return this.size;
@@ -67,8 +67,8 @@ public class MAV extends UAV{
 
     
     /** 
-     * sets the model of the object
-     * @param model model of object
+     * sets the model of MAV
+     * @param model model of MAV
      */
     public void setModel(String model){
         this.model = model;
@@ -76,8 +76,8 @@ public class MAV extends UAV{
 
     
     /** 
-     * sets the size of the object
-     * @param size size of the object
+     * sets the size of MAV
+     * @param size size of MAV
      */
     public void setModel(double size){
         this.size = size;
