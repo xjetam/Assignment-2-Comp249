@@ -24,12 +24,12 @@ public class Helicopter extends Airplane{
     /**
      * Constructor that takes parameters.
      * 
-     * @param brand 
-     * @param price
-     * @param horsepower
-     * @param numOfCylinders
-     * @param creationYear
-     * @param passengerCapacity
+     * @param brand brand of helicopter
+     * @param price price of helicopter
+     * @param horsepower horsepower of helicopter
+     * @param numOfCylinders num of cylinders on helicopter
+     * @param creationYear creation year of helicopter
+     * @param passengerCapacity passenger capacity
      */
     public Helicopter(String brand, double price, int horsepower, int numOfCylinders, int creationYear, int passengerCapacity){
         super(brand, price, horsepower);
@@ -82,7 +82,7 @@ public class Helicopter extends Airplane{
     
     /** 
      * sets num  of cylinders of helicopter
-     * @param numOfCylinders
+     * @param numOfCylinders num of cylinders of helicopter
      */
     public void setNumOfCylinders(int numOfCylinders){
         this.numOfCylinders = numOfCylinders;
@@ -91,7 +91,7 @@ public class Helicopter extends Airplane{
     
     /** 
      * sets creation year of helicopter
-     * @param creationYear
+     * @param creationYear creation year of helicopter
      */
     public void setCreationYear(int creationYear){
         this.creationYear = creationYear;
@@ -100,7 +100,7 @@ public class Helicopter extends Airplane{
     
     /** 
      * sets passenger capacity of helicopter
-     * @param passengerCapacity
+     * @param passengerCapacity passenger capacity of helicopter
      */
     public void setPassengerCapacity(int passengerCapacity){
         this.passengerCapacity = passengerCapacity;
@@ -109,7 +109,7 @@ public class Helicopter extends Airplane{
     
     /** 
      * Prints out all the info of helicopter
-     * @return String
+     * @return String info of helicopter
      */
     public String toString(){
         return "Flying object number " + this.getObjectNumber() + ". " + "This helicopter is manufactured by " + this.getBrand() + ", costs $" + this.getPrice() + ", has " + this.getHorsepower()+ " horsepower, "
