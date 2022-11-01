@@ -21,8 +21,11 @@ public class Driver {
         airplane.setPrice(120000);
         airplane.setHorsepower(2000);
         Airplane airplane2 = new Airplane("FlyBy", 200000, 4000);
+        Airplane airplane3 = new Airplane("WestJet", 250000, 3000);
+        Airplane airplane4 = new Airplane("Yahoo", 110000, 2600);
         System.out.println(airplane);
         System.out.println(airplane2);
+        System.out.println(airplane3);
 
         System.out.println();
 
@@ -37,15 +40,18 @@ public class Driver {
 
         Quadcopter quadCopter = new Quadcopter("Suzuki", 1712, 5000, 16, 2021, 20, 400);
         Quadcopter quadCopter2 = new Quadcopter(quadCopter);
+        Quadcopter quadCopter3 = new Quadcopter("Prada", 1800, 6500, 16, 2020, 22, 450);
         quadCopter2.setBrand("Ford");
         quadCopter2.setHorsepower(2100);
         System.out.println(quadCopter);
         System.out.println(quadCopter2);
+        System.out.println(quadCopter3);
 
         System.out.println();
 
         Multirotor multi = new Multirotor("Lambo", 400000, 6000, 14, 2019, 25, 8);
         Multirotor multi2 = new Multirotor(multi);
+        Multirotor multi3 = new Multirotor("VW", 500000, 9000, 16, 2021, 20, 8);
         multi2.setBrand("Ferrari");
         multi2.setHorsepower(6500);
         multi2.setPrice(450000);
@@ -77,9 +83,9 @@ public class Driver {
 
         System.out.println();
 
-        System.out.println(helicopter.equals(agDrone));
-        System.out.println(helicopter.equals(helicopter2));
-        System.out.println(helicopter2.equals(helicopter3));
+        System.out.println("helicopter with number " + helicopter.getObjectNumber() + " equals agricultural drone with number " + agDrone.getObjectNumber() + ": " + helicopter.equals(agDrone));
+        System.out.println("helicopter with number " + helicopter.getObjectNumber() + " equals helicopter with number " + helicopter2.getObjectNumber() + ": " + helicopter.equals(helicopter2));
+        System.out.println("helicopter with number " + helicopter2.getObjectNumber() + " equals helicopter with number " + helicopter3.getObjectNumber() + ": " + helicopter2.equals(helicopter3));
 
         System.out.println();
 
@@ -87,12 +93,12 @@ public class Driver {
 
         findLeastAndMostExpensiveUAV(array1);
 
-        Multirotor multi3 = new Multirotor("Toyota", 500000, 6500, 16, 2020, 20, 8);
-        Multirotor multi4 = new Multirotor("Hyundai", 600000, 6800, 18, 2018, 20, 10);
+        Multirotor multi4 = new Multirotor("Toyota", 500000, 6500, 16, 2020, 20, 8);
+        Multirotor multi5 = new Multirotor("Hyundai", 600000, 6800, 18, 2018, 20, 10);
 
         System.out.println();
 
-        FlyingObjects[] array2 = {airplane, airplane2, helicopter, helicopter2, helicopter3, quadCopter, quadCopter2, multi, multi2, multi3, multi4, mav, mav2, agDrone, agDrone2};
+        FlyingObjects[] array2 = {airplane, airplane2, airplane3, airplane4, helicopter, helicopter2, helicopter3, quadCopter, quadCopter2, quadCopter3, multi, multi2, multi3, multi4, multi5};
         findLeastAndMostExpensiveUAV(array2);
     }
 
@@ -104,7 +110,7 @@ public class Driver {
     public static void findLeastAndMostExpensiveUAV(FlyingObjects[] array){
         int counter = 0;
         for (FlyingObjects object : array){
-            if (object.getClass().toString().equals("class UAV.UAV")){
+            if (object instanceof UAV){
                 counter++;
             }
         }
@@ -115,7 +121,7 @@ public class Driver {
             UAV[] UAVs = new UAV[counter];
             int UAVcounter = 0;
             for (int i = 0; i < array.length; i++){
-                if (array[i].getClass().toString().equals("class UAV.UAV")){
+                if (array[i] instanceof UAV){
                     UAVs[UAVcounter] = (UAV) array[i];
                     UAVcounter++;
                 }
@@ -123,7 +129,6 @@ public class Driver {
 
             int indexMax = 0;
             int indexMin = 0;
-
             for (int i = 0; i < counter; i++){
                 if (UAVs[i].getPrice() < UAVs[indexMin].getPrice()){
                     indexMin = i;
